@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/single_club_info"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_outline_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/aashif"
+        android:layout_height="match_parent">
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/single_club_to_club_specific_intent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/card_back_club"/>
+
+            <!-- Front Layout Goes Here -->
+            <include layout="@layout/card_front_club"/>
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+    </LinearLayout>
+</LinearLayout>

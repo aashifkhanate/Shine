@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoundActivity">
+
+    <Button
+        android:id="@+id/act_round_register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:id="@+id/container_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/round_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ananya">
+
+            </ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_desciption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rl_note"
+                android:layout_below="@+id/round_img">
+
+
+                <TextView
+                    android:id="@+id/tv_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="27dp"
+                    android:text="Description:"
+                    android:textColor="#111"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_description_heading"
+                    android:layout_alignStart="@id/tv_description_heading"
+                    android:layout_below="@+id/tv_description_heading"
+                    android:text=" it is a written test round "
+                    android:textColor="#333"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_desciption"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_note_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Special Notes:"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_special_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_note_heading"
+                    android:layout_alignStart="@id/tv_note_heading"
+                    android:layout_below="@+id/tv_note_heading"
+                    android:text="Anaya is a 21st century coinage with uncertain origins. For one, it could have developed from the masculine Hebrew name “Anaiah” which means “Yahweh (God) answers”.So it is very important part of ur"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_time_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_note"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_venue_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Venue:"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_round_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_round_start_time"
+                    android:layout_below="@+id/tv_venue_heading"
+                    android:text="18 March 2018"
+                    android:textColor="#111"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/tv_round_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/tv_venue_heading"
+                    android:layout_below="@+id/tv_round_date"
+                    android:text="10:00"
+                    android:textAlignment="center"
+                    android:textColor="#333"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_round_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_round_start_time"
+                    android:layout_below="@+id/tv_round_start_time"
+
+                    android:text="Lal Chowk"
+                    android:textColor="#111"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_coords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rl_time_date"
+                android:layout_below="@+id/rl_time_date"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_coords_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Co-ordinators:"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_coordinators"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_coords_heading"
+                    android:layout_alignStart="@id/tv_coords_heading"
+                    android:layout_below="@+id/tv_coords_heading"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_faqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rl_time_date"
+                android:layout_below="@+id/rl_coords"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_faqs_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="FAQs"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_faqs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tv_faqs_heading"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manan.dev.shineymca.AdminZone.AdminLoginActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_club_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_edit_text"
+        android:padding="8dp"
+        android:layout_marginTop="40dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_club_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/background_edit_text"
+            android:padding="8dp"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

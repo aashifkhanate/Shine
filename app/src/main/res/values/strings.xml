@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Shine YMCA</string>
+    <string name="about">ABOUT</string>
+    <string name="profile">PROFILE</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="home">HOME</string>
+    <string name="facebook_app_id">157807725072724</string>
+    <string name="fb_login_protocol_scheme">fb157807725072724</string>
+    <string name="preference_file_key">shared_preference_file</string>
+    <string-array name="branch">
+        <item>CE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EIC</item>
+        <item>ME</item>
+        <item>EL</item>
+        <item>MBA</item>
+        <item>MSC</item>
+        <item>BSC</item>
+    </string-array>
+    <string-array name="year">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="event_name">Event Name</string>
+    <string name="description">Description</string>
+</resources>

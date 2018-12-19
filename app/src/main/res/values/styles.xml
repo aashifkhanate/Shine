@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<style name="UserHomePage" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="UserHomePage" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#f2eeee</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#5fff</item>
+        <item name="android:statusBarColor">#dcdcdc</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+</resources>

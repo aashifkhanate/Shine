@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+        <RelativeLayout
+            android:id="@+id/profile_pict"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                android:id="@+id/pb_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pict"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_edit_text">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                tools:text="Jayati" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:text="jayatibhayana@gmail.com" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:text="9717060118" />
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:text="CE" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_branch"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:text="2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_events"
+                android:textColor="#000765"
+                android:layout_below="@+id/tv_year"
+                android:textSize="20dp"
+                android:text="REGISTERED IN:"
+                android:fontFamily="serif"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_events"
+                android:textColor="#000765"
+                android:layout_below="@+id/reg_events"
+                android:textSize="20dp"
+                android:text="Written Test"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/profile_logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rl"
+            android:layout_marginTop="80dp"
+            android:text="Logout"
+            tools:ignore="UnknownId" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

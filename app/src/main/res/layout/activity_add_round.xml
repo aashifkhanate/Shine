@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminZone.AddRoundActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_main_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"
+                android:src="@drawable/vector_edit"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_poster"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/et_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/event_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:background="@drawable/background_edit_text"
+                android:padding="4dp"/>
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:textSize="16dp"
+                android:background="@drawable/background_edit_text"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/et_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Date"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:background="@drawable/background_edit_text"
+                    android:padding="4dp" />
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Time"
+                    android:focusable="false"
+                    android:inputType="time"
+                    android:textAlignment="center"
+                    android:background="@drawable/background_edit_text"
+                    android:padding="4dp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Venue"
+                android:inputType="text"
+                android:background="@drawable/background_edit_text"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/et_special_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Special Notes"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:background="@drawable/background_edit_text"
+                android:padding="4dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Coordinators"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_coordinators"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_edit_text"
+                    android:padding="4dp"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:id="@+id/ll_coordinators"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="FAQ's"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_faq"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/vector_add"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_faq"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Save" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

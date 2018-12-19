@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/home_clubs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Clubs"
+        android:textSize="30sp"/>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/home_clubs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_club_list"></android.support.v7.widget.RecyclerView>
+    <!--</ScrollView>-->
+</RelativeLayout>
